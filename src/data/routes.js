@@ -3,7 +3,7 @@ import { PROFILE_NAME } from '../constants';
 const routes = [
   {
     index: true,
-    label: PROFILE_NAME,
+    label: "CV as a project",
     path: '/',
   },
   {
