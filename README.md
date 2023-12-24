@@ -1,2 +1,2 @@
 # cv-as-a-project-ui
-Storefront of 'CV-as-a-project'
+Storefront part of 'CV-as-a-project'
