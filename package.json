@@ -1,11 +1,11 @@
 {
   "name": "cv-as-a-project-ui",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
-  "homepage": "https://alexsurma.com/",
+  "homepage": "https://www.alexsurma.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aliaksandrsurma/cv-as-a-project.git"
+    "url": "https://github.com/aliaksandrsurma/cv-as-a-project-ui.git"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
@@ -40,10 +40,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rimraf ./build && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build && react-snap",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"   
   },
   "eslintConfig": {
