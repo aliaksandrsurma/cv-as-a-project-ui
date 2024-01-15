@@ -15,6 +15,31 @@ import Main from '../layouts/Main';
 import { Title, TitleH2 } from '../shared/StyledElements';
 import { PROFILE_NAME } from '../constants';
 
+
+const MainArticle = styled.article`
+    padding: 3em 2em 1em;
+    background: #ffffff;
+    border: solid 1px rgba(160, 160, 160, 0.3);
+    margin: 0 0 3em;
+    position: relative;
+
+    & img {
+        width: 100%;
+        /* Add more styles here */
+    }
+`;
+
+const MainArticleHeader = styled.header`
+    border-bottom: 1px solid hsla(0,0%,63%,.3);
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;  
+    left: -2em;
+    margin: -3em 0 3em;
+    position: relative;
+    width: calc(100% + 4em);
+`;
+
 const Index = () => {
 
     const [markdown, setMarkdown] = useState('');
@@ -24,30 +49,6 @@ const Index = () => {
             .then(response => response.text())
             .then(text => setMarkdown(text));
     }, []); // Empty dependency array means this effect will only run once
-
-    const MainArticle = styled.article`
-        padding: 3em 2em 1em;
-        background: #ffffff;
-        border: solid 1px rgba(160, 160, 160, 0.3);
-        margin: 0 0 3em;
-        position: relative;
-
-        & img {
-            width: 100%;
-            /* Add more styles here */
-        }
-    `;
-
-    const MainArticleHeader = styled.header`
-        border-bottom: 1px solid hsla(0,0%,63%,.3);
-        display: -moz-flex;
-        display: -ms-flex;
-        display: flex;  
-        left: -2em;
-        margin: -3em 0 3em;
-        position: relative;
-        width: calc(100% + 4em);
-    `;
 
     return (
         <Main
