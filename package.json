@@ -20,8 +20,10 @@
     "react-dom": "^18.2.0",
     "react-ga": "^3.3.1",
     "react-helmet-async": "^2.0.3",
+    "react-markdown": "^9.0.1",
     "react-router-dom": "^6.20.1",
     "react-scripts": "^5.0.1",
+    "remark-gfm": "^4.0.0",
     "styled-components": "^6.1.2"
   },
   "devDependencies": {
@@ -45,10 +47,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy-gh-pages": "gh-pages -d build",
-    "deploy-patch": "npm version patch && npm run deploy-gh-pages",
-    "deploy-minor": "npm version minor && npm run deploy-gh-pages",
-    "deploy-major": "npm version major && npm run deploy-gh-pages"
+    "deploy": "gh-pages -d build",
+    "deploy-patch": "npm version patch && npm run deploy",
+    "deploy-minor": "npm version minor && npm run deploy",
+    "deploy-major": "npm version major && npm run deploy"
   },
   "eslintConfig": {
     "extends": [
