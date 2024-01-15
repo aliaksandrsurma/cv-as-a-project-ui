@@ -16,8 +16,9 @@ const work = [
     name: 'EPAM Systems',
     position: 'Solution Architect',
     url: 'https://www.epam.com/',
-    startDate: '2028-03-01',
-    summary: `Consulting and Development Services for Omnichannel adidas area. TODO: Add more details`,
+    startDate: '2018-03-01',
+    summary: `Consulting and Development Services
+     for Omnichannel adidas area. **TODO: Add more details**`,
     highlights: [
       `consulting Adidas teams on payment integrations and payment related initiatives/projects`,
       `working with business stakeholders on collecting business requirements/needs`,
