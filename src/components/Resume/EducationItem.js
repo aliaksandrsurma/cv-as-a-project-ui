@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Degree = ({ data }) => (
+const EducationItem = ({ data }) => (
   <article className="degree-container">
     <header>
       <h4 className="degree">{data.degree}</h4>
@@ -10,7 +10,7 @@ const Degree = ({ data }) => (
   </article>
 );
 
-Degree.propTypes = {
+EducationItem.propTypes = {
   data: PropTypes.shape({
     degree: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
@@ -19,4 +19,4 @@ Degree.propTypes = {
   }).isRequired,
 };
 
-export default Degree;
+export default EducationItem;

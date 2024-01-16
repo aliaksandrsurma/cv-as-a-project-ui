@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Degree from './Education/Degree';
+import EducationItem from './EducationItem';
 
 const Education = ({ data }) => (
   <div className="education">
@@ -10,9 +10,8 @@ const Education = ({ data }) => (
       <h3>Education</h3>
     </div>
     {data.map((degree) => (
-      <Degree
+      <EducationItem
         data={degree}
-        key={degree.school}
       />
     ))}
   </div>
