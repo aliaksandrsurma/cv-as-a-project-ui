@@ -31,8 +31,7 @@ const SideBar = () => {
         </Link>
         <header>
           <h2>{PROFILE_NAME}</h2>
-          <p><a href={`mailto:${EMAIL}`}>{EMAIL}</a> <br />
-            <a href={`mailto:${EMAIL_PERSONAL}`}>{EMAIL_PERSONAL}</a>
+          <p><a href={`mailto:${EMAIL_PERSONAL}`}>{EMAIL_PERSONAL}</a>
           </p>
         </header>
       </section>

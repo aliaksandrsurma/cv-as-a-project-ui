@@ -4,7 +4,7 @@
  * Landing page of the site.
  * Displays generic information about the site and it's idea.
  */
-import React, { useEffect, useState } from 'react';
+import { React, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Markdown from 'react-markdown';
@@ -12,7 +12,7 @@ import remarkGfm from 'remark-gfm';
 
 //project components
 import Main from '../layouts/Main';
-import { Title, TitleH2 } from '../shared/StyledElements';
+import { Title, TitleH2 } from '../components/Common/StyledElements';
 import { PROFILE_NAME } from '../constants';
 
 
