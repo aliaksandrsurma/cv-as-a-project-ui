@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Job from './Experience/Job';
+import ExperienceItem from './ExperienceItem';
 
 const Experience = ({ data }) => (
   <div className="experience">
@@ -10,9 +10,8 @@ const Experience = ({ data }) => (
       <h3>Experience</h3>
     </div>
     {data.map((job) => (
-      <Job
+      <ExperienceItem
         data={job}
-        key={`${job.name}-${job.position}`}
       />
     ))}
   </div>

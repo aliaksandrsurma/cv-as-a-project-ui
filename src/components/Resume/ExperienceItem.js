@@ -5,7 +5,8 @@ import styled from 'styled-components';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
-const ArticleJobsContainer = styled.article`
+//TODO: revise/refactor styles
+const ExperienceItemContainer = styled.article`
   > p {
     margin-bottom: 0.5em;
     font-size: 0.9em;
@@ -14,12 +15,12 @@ const ArticleJobsContainer = styled.article`
 `;
 
 
-const Job = ({
+const ExperienceItem = ({
   data: {
     name, position, url, startDate, endDate, summary, highlights,
   },
 }) => (
-  <ArticleJobsContainer>
+  <ExperienceItemContainer>
     <header>
       <h4><a href={url}>{name}</a> - {position}</h4>
       <p className="daterange"> {dayjs(startDate).format('MMMM YYYY')} - {endDate ? dayjs(endDate).format('MMMM YYYY') : 'PRESENT'}</p>
@@ -36,10 +37,10 @@ const Job = ({
         ))}
       </ul>
     ) : null}
-  </ArticleJobsContainer>
+  </ExperienceItemContainer>
 );
 
-Job.propTypes = {
+ExperienceItem.propTypes = {
   data: PropTypes.shape({
     name: PropTypes.string.isRequired,
     position: PropTypes.string.isRequired,
@@ -51,4 +52,4 @@ Job.propTypes = {
   }).isRequired,
 };
 
-export default Job;
+export default ExperienceItem;
