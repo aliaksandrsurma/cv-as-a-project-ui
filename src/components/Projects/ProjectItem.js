@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 
-const Cell = ({ data }) => (
+const ProjectItem = ({ data }) => (
   <div className="cell-container">
     <article className="mini-post">
       <header>
@@ -19,7 +19,7 @@ const Cell = ({ data }) => (
   </div>
 );
 
-Cell.propTypes = {
+ProjectItem.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
     link: PropTypes.string,
@@ -29,4 +29,4 @@ Cell.propTypes = {
   }).isRequired,
 };
 
-export default Cell;
+export default ProjectItem;

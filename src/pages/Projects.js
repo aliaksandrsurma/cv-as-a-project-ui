@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
-
-import Cell from '../components/Projects/Cell';
-import data from '../data/projects';
 import { PROFILE_NAME } from '../constants';
+import ProjectItem from '../components/Projects/ProjectItem';
+
+import data from '../data/projects';
 
 const Projects = () => (
   <Main
@@ -20,7 +20,7 @@ const Projects = () => (
         </div>
       </header>
       {data.map((project) => (
-        <Cell
+        <ProjectItem
           data={project}
           key={project.title}
         />
