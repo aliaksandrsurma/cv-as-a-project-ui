@@ -51,7 +51,7 @@
     "eject": "react-scripts eject",
     "predeploy:prod": "npm run build:prod",
     "deploy:prod": "gh-pages -d build",
-    "deploy-patch": "npm version patch && npm run deploy:prod",
+    "deploy-patch": "npm version patch -m 'Releasing %s version' --push && npm run deploy:prod",
     "deploy-minor": "npm version minor && npm run deploy:prod",
     "deploy-major": "npm version major && npm run deploy:prod"
   },
