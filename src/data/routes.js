@@ -1,4 +1,3 @@
-import { PROFILE_NAME } from '../constants';
 
 const routes = [
   {
@@ -7,7 +6,7 @@ const routes = [
     path: '/',
   },
   {
-    label: 'About',
+    label: 'About Me',
     path: '/about',
   },
   {
