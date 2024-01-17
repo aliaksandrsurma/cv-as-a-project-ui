@@ -12,6 +12,7 @@ const Education = ({ data }) => (
     {data.map((degree) => (
       <EducationItem
         data={degree}
+        key={degree.school}
       />
     ))}
   </div>

@@ -13,6 +13,7 @@ const Courses = ({ data }) => (
       {data.map((course) => (
         <CoursesItem
           data={course}
+          key={course.number}
         />
       ))}
     </ul>
