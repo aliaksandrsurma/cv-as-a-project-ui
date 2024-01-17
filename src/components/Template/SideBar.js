@@ -7,7 +7,7 @@ import remarkGfm from 'remark-gfm';
 import packageJson from '../../../package.json';
 import ContactIcons from '../Contact/ContactIcons';
 
-const { PROFILE_NAME, EMAIL, EMAIL_PERSONAL } = require('../../constants');
+const { PROFILE_NAME, EMAIL_PERSONAL } = require('../../constants');
 
 const SideBar = () => {
 
@@ -49,7 +49,7 @@ const SideBar = () => {
 
       <section id="footer">
         <ContactIcons />
-        <p className="copyright">&copy; ${new Date().getFullYear()} {PROFILE_NAME} CV-as-a-project-ui v{formattedVersion}</p>
+        <p className="copyright">&copy; {new Date().getFullYear()} {PROFILE_NAME} CV-as-a-project-ui v {formattedVersion}</p>
         <p className="copyright">Built with React</p>
       </section>
     </section>
