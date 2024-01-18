@@ -47,7 +47,7 @@
     "build:prod": "env-cmd -f .env.production npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy:prod": "npm run build:prod && react-snap",
+    "predeploy:prod": "npm run build:prod",
     "deploy:prod": "gh-pages -d build",
     "deploy-patch": "npm version patch -m 'Releasing %s version' && npm run deploy:prod",
     "deploy-minor": "npm version minor -m 'Releasing %s version' && npm run deploy:prod",
